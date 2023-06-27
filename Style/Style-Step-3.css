@@ -1,0 +1,18 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
+    -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
+}
+h3 {
+  text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
+    -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
+}

@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Начало */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+}
+/* Nav и Responsive Bar */
+nav {
+  background: #0082e652;
+  height: 50px;
+  width: 100%;
+}
+
+label.logo {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.462);
+  font-size: 35px;
+  line-height: 50px;
+  padding: 0 100px;
+  font-weight: 100px;
+  text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
+    -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: rgba(0, 0, 255, 0.397);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.495);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 1s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    border-radius: 8px;
+    background: rgba(0, 0, 255, 0.314);
+    color: black;
+  }
+}
+#check:checked ~ ul {
+  left: 0;
+}
+
+/* Текст по середине */
+
+.h1_first_page {
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  font-size: 50px;
+  text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
+    -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
+}
+
+/* Кнопка по середине */
+
+.btn_first_page {
+  margin-top: 25px;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
+
+.btn_first_page:active {
+  scale: 0.92;
+}
+
+.btn_first_page:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(
+    270deg,
+    rgba(2, 29, 78, 0.681) 0%,
+    rgba(31, 215, 232, 0.873) 60%
+  );
+  color: rgb(4, 4, 38);
+}
+
+/* Волны внизу */
+
+section {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/Image/wave1.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 5s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0px;
+}
+
+section .wave.wave2 {
+  animation: animate2 10s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3 {
+  animation: animate 5s linear infinite;
+  z-index: 998;
+  opacity: 0.7;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .wave.wave4 {
+  animation: animate2 15s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+/* Анимация переъода с страницы на страницу */
+
+.transition-fade {
+  transition: 1s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade:hover {
+  opacity: 0;
+  transform: translateY(100px);
+}
