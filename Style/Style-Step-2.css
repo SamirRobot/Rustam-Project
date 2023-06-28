@@ -53,9 +53,9 @@ body {
 .quiz-container {
   height: auto;
   box-shadow: 0px 0px 45px black, 0px 0px 90px silver;
-  background-color: #fff;
+  background-color: #ffffff87;
   border-radius: 10px;
-  flex: 0 600px;
+  flex: 0 490px;
   overflow: hidden;
 }
 .quiz-header {
@@ -65,24 +65,29 @@ body {
 /* Текст в Контейнере */
 
 h2 {
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
   margin: 0;
+  color: whitesmoke;
   font-family: "Times New Roman", Times, serif;
+  text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
+    -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
 }
 
 /* Список */
 
 ul {
   display: flex;
-  margin-right: 50px;
+  flex-direction: column;
+  margin-right: -10px;
   justify-content: center;
   list-style-type: none;
 }
 ul li {
-  font-size: 1.7rem;
-  margin: 1rem 0;
-  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  margin-left: -30px;
+  font-weight: 600;
   font-family: "Times New Roman", Times, serif;
 }
 ul li label {

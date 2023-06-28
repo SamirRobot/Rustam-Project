@@ -56,8 +56,8 @@ submitBtn.addEventListener('click', () => {
        }
         else {
            quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
-           <a href="/Html/index_Step-3.html" class="btn_down">Result</a>
+           <h2>You answered ${score}/${quizData.length} Тест Завершён</h2>
+           <a href="/Html/index_Step-3.html" class="btn_down">Показать результат</a>
            `
        }
     }
