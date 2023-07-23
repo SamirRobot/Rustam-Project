@@ -1,3 +1,3 @@
-const swup = new swup();
+
 
 

@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url(/Image/Back_Fon.jpg) no-repeat;
+  background: url(../Image/Back_Fon.jpg);
   font-family: "Poppins", sans-serif;
   display: flex;
   align-items: center;
@@ -53,13 +53,13 @@ body {
 .quiz-container {
   height: auto;
   box-shadow: 0px 0px 45px black, 0px 0px 90px silver;
-  background-color: #ffffff87;
+  background-color: #ffffff58;
   border-radius: 10px;
-  flex: 0 490px;
+  flex: 0 480px;
   overflow: hidden;
 }
 .quiz-header {
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
 /* Текст в Контейнере */
@@ -68,7 +68,7 @@ h2 {
   padding: 0.5rem;
   text-align: center;
   margin: 0;
-  color: whitesmoke;
+  color: black;
   font-family: "Times New Roman", Times, serif;
   text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
     -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
