@@ -140,7 +140,7 @@ a:hover {
   position: absolute;
   font-family: "Times New Roman", Times, serif;
   color: blueviolet;
-  font-size: 50px;
+  font-size: 45px;
   text-shadow: 3px 10px 20px black, 20px 4px 10px rgba(47, 53, 120, 1),
     -20px -10px 5px rgba(99, 88, 3, 1), -10px 11px 4px rgba(4, 116, 106, 1);
   margin-bottom: 50px;

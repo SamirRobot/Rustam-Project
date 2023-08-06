@@ -10,7 +10,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  margin: auto auto;
 }
 
 /* Кнопка Возврата */
@@ -55,7 +55,7 @@ body {
   box-shadow: 0px 0px 45px black, 0px 0px 90px silver;
   background-color: #ffffff58;
   border-radius: 10px;
-  flex: 0 480px;
+  flex: 0 470px;
   overflow: hidden;
 }
 .quiz-header {
