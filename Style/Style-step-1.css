@@ -13,6 +13,12 @@ body img {
   z-index: -1;
 }
 
+@media screen and (max-device-width: 480px) {
+  body img {
+    width: 100%;
+    height: 100%;
+  }
+}
 /* Начало */
 
 .container {
