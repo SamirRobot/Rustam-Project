@@ -15,10 +15,9 @@ body {
 
 @media screen and (max-device-width: 480px) {
   body {
-    margin: -20px auto;
+    margin: -25px auto;
   }
 }
-
 /* Кнопка Возврата */
 
 .Botton_reset {
@@ -64,6 +63,7 @@ body {
   flex: 0 470px;
   overflow: hidden;
 }
+
 .quiz-header {
   padding: 1.2rem;
 }
