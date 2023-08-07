@@ -10,7 +10,13 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: -10px auto;
+  margin: 0px auto;
+}
+
+@media screen and (max-device-width: 480px) {
+  body {
+    margin: -20px auto;
+  }
 }
 
 /* Кнопка Возврата */
