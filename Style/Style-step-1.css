@@ -15,7 +15,7 @@ body img {
 
 @media screen and (max-device-width: 480px) {
   body img {
-    width: 260px;
+    width: 480px;
     height: 100%;
     background-size: cover;
   }
